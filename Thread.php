@@ -188,7 +188,7 @@ class Thread
                         unset($this->_resultStream[$closeCount]);
                         unset($this->_descRealtion[$closeCount]);
 
-                        // Put table back in if failed
+                        // Put command back in if failed
                         array_unshift($this->commands, $currentCommand);
                     }
                 } else if (count($this->_threads) <= 0) {
